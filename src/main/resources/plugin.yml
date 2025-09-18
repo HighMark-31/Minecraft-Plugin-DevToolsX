@@ -1,0 +1,208 @@
+name: DevToolsX
+version: '1.0'
+main: it.highmark.devToolsX.DevToolsX
+api-version: '1.20'
+authors: [ HighMark ]
+website: https://highmark.it
+description: Essential tools for developers
+commands:
+  rename:
+    description: Rename the item in hand with colors.
+    usage: /rename <name...>
+    permission: devtools.rename
+  lore:
+    description: Manage the lore of the item in hand.
+    usage: /lore add|set|clear
+    permission: devtools.lore
+  enchantx:
+    description: Apply an enchantment at arbitrary level to the item in hand (unsafe).
+    usage: /enchantx <enchant> <level|max> [player]
+    permission: devtools.enchant
+  gmc:
+    description: Set GameMode to Creative.
+    usage: /gmc [player]
+    permission: devtools.gamemode.self
+    aliases: [gmcreative]
+  gms:
+    description: Set GameMode to Survival.
+    usage: /gms [player]
+    permission: devtools.gamemode.self
+    aliases: [gmsurvival]
+  gma:
+    description: Set GameMode to Adventure.
+    usage: /gma [player]
+    permission: devtools.gamemode.self
+    aliases: [gmadventure]
+  gmsp:
+    description: Set GameMode to Spectator.
+    usage: /gmsp [player]
+    permission: devtools.gamemode.self
+    aliases: [gmspectator]
+  duplicate:
+    description: Duplicate the item in hand.
+    usage: /duplicate
+    permission: devtools.duplicate
+  heal:
+    description: Heal health and hunger to maximum.
+    usage: /heal [player]
+    permission: devtools.heal.self
+  speed:
+    description: Change flight/walk speed.
+    usage: /speed <1-10> [player]
+    permission: devtools.speed.self
+  back:
+    description: Return to the last position.
+    usage: /back
+    permission: devtools.back
+  ping:
+    description: Show player's ping.
+    usage: /ping [player]
+    permission: devtools.ping.self
+  coords:
+    description: Show current coordinates.
+    usage: /coords
+    permission: devtools.coords
+  serverinfo:
+    description: General server information.
+    usage: /serverinfo
+    permission: devtools.serverinfo
+  entitycount:
+    description: Show how many entities are in the world.
+    usage: /entitycount [world]
+    permission: devtools.entitycount
+  threadinfo:
+    description: List active server threads to identify blocking tasks.
+    usage: /threadinfo
+    permission: devtools.threadinfo
+  permcheck:
+    description: Check if a player has a specific permission.
+    usage: /permcheck <permission> [player]
+    permission: devtools.permcheck
+  mockjoin:
+    description: Simulate the PlayerJoinEvent to test plugins.
+    usage: /mockjoin [player]
+    permission: devtools.mockjoin
+  mockquit:
+    description: Simulate the PlayerQuitEvent to test plugins.
+    usage: /mockquit [player]
+    permission: devtools.mockquit
+  reloadconfig:
+    description: Reload the configuration (config.yml) of a specific plugin.
+    usage: /reloadconfig <plugin>
+    permission: devtools.reloadconfig
+  pluginsx:
+    description: List installed plugins with colors (green = enabled, red = disabled).
+    usage: /pluginsx
+    permission: devtools.pluginsx
+  pluginreload:
+    description: Disable and re-enable a specific plugin without restarting the server.
+    usage: /pluginreload <plugin>
+    permission: devtools.pluginreload
+  pluginenable:
+    description: Enable a previously disabled plugin.
+    usage: /pluginenable <plugin>
+    permission: devtools.pluginenable
+  plugindisable:
+    description: Disable a specific plugin (with protection for DevToolsX).
+    usage: /plugindisable <plugin>
+    permission: devtools.plugindisable
+  colori:
+    description: Show all available color codes and text styles in Minecraft.
+    usage: /colori
+    permission: devtools.colori
+  players:
+    description: Show the list of online players with count and roles-based colors.
+    usage: /players
+    permission: devtools.players
+  staffinv:
+    description: Open the virtual staff inventory, with automatic saving.
+    usage: /staffinv
+    permission: devtools.staffinv
+permissions:
+  devtools.rename:
+    description: Allows renaming items.
+    default: op
+  devtools.lore:
+    description: Allows modifying item lore.
+    default: op
+  devtools.enchant:
+    description: Allows applying unsafe enchantments.
+    default: op
+  devtools.gamemode.self:
+    description: Change your own GameMode.
+    default: op
+  devtools.gamemode.others:
+    description: Change other players' GameMode.
+    default: op
+  devtools.duplicate:
+    description: Allows duplicating items.
+    default: op
+  devtools.heal.self:
+    description: Allows healing yourself.
+    default: op
+  devtools.heal.others:
+    description: Allows healing other players.
+    default: op
+  devtools.speed.self:
+    description: Allows changing your own speed.
+    default: op
+  devtools.speed.others:
+    description: Allows changing other players' speed.
+    default: op
+  devtools.back:
+    description: Allows returning to previous position.
+    default: op
+  devtools.ping.self:
+    description: Allows viewing your own ping.
+    default: true
+  devtools.ping.others:
+    description: Allows viewing other players' ping.
+    default: op
+  devtools.coords:
+    description: Allows viewing your own coordinates.
+    default: true
+  devtools.serverinfo:
+    description: Allows viewing server information.
+    default: op
+  devtools.entitycount:
+    description: Allows counting entities.
+    default: op
+  devtools.threadinfo:
+    description: Allows viewing server thread information.
+    default: op
+  devtools.permcheck:
+    description: Allows checking player permissions.
+    default: op
+  devtools.mockjoin:
+    description: Allows simulating player join events.
+    default: op
+  devtools.mockquit:
+    description: Allows simulating player quit events.
+    default: op
+  devtools.reloadconfig:
+    description: Allows reloading plugin configurations.
+    default: op
+  devtools.pluginsx:
+    description: Allows viewing plugin list with status.
+    default: op
+  devtools.pluginreload:
+    description: Allows reloading plugins.
+    default: op
+  devtools.pluginenable:
+    description: Allows enabling plugins.
+    default: op
+  devtools.plugindisable:
+    description: Allows disabling plugins.
+    default: op
+  devtools.colori:
+    description: Allows viewing color codes.
+    default: true
+  devtools.players:
+    description: Allows viewing online players list.
+    default: true
+  devtools.staffinv:
+    description: Allows accessing staff inventory.
+    default: op
+  devtools.*:
+    description: Access to all DevToolsX commands.
+    default: op
