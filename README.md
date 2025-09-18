@@ -2,6 +2,8 @@
 
 DevToolsX is an essential plugin for Minecraft servers, designed to provide administrators and developers with a comprehensive suite of tools for server management, debugging, and optimization. With a wide range of commands and features, DevToolsX simplifies daily operations and facilitates the development of new plugins.
 
+[**LEAVE A STARS**]([https://www.spigotmc.org/resources/%E2%9C%A8--find-and-manage-signs-on-](https://www.spigotmc.org/resources/devtoolsx.128927/)) | [**LEAVE A REVIEW ON SPIGOT**](https://www.spigotmc.org/resources/%E2%9C%A8--find-and-manage-signs-on-)
+
 ## Key Features
 
 - **Advanced Command Management**: Tools for item manipulation, gamemode management, teleportation, and more.
@@ -117,7 +119,6 @@ Below is a detailed list of all commands available in DevToolsX:
     -   **Description**: Opens the virtual staff inventory, with automatic saving.
     -   **Permission**: `devtools.staffinv`
 
-[**LEAVE A STARS**](https://www.spigotmc.org/resources/%E2%9C%A8--find-and-manage-signs-on-) | [**LEAVE A REVIEW ON SPIGOT**](https://www.spigotmc.org/resources/%E2%9C%A8--find-and-manage-signs-on-)
 
 ## License
 
