@@ -2,7 +2,7 @@
 
 DevToolsX is an essential plugin for Minecraft servers, designed to provide administrators and developers with a comprehensive suite of tools for server management, debugging, and optimization. With a wide range of commands and features, DevToolsX simplifies daily operations and facilitates the development of new plugins.
 
-[**LEAVE A STARS**]([https://github.com/HighMark-31/Minecraft-Plugin-DevToolsX)) | [**LEAVE A REVIEW ON SPIGOT**](https://www.spigotmc.org/resources/devtoolsx.128927/)
+[**LEAVE A STARS**]([https://github.com/HighMark-31/Minecraft-Plugin-DevToolsX) | [**LEAVE A REVIEW ON SPIGOT**](https://www.spigotmc.org/resources/devtoolsx.128927/)
 
 ## Key Features
 
